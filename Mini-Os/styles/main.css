@@ -1,6 +1,6 @@
 :root {
     --navi: rgb(66, 120, 124);
-    --coso: grey;
+    --navbar: rgba(171, 171, 171, 0.422);
     --icon: rgb(86, 94, 170);
     --text: white;
 }
@@ -20,26 +20,66 @@ body {
 
 h1 {
     position: absolute;
-    text-align: center;
-    color: black;
+    text-align: top;
+    top: 10px;
+    color: var(--text);
     font-size: 50px;
+    animation: beat 1.2s infinite;
 }
 
-.navbarContainer {
-    display: flex;
-    width: 400px;
-    height: 70vh;
-    background-color: var(--navi);
-    border-radius: 20px;
-    justify-content: flex-end;
-    flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 6px 6px 6px rgb(red, green, blue);
+@keyframes beat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
+
+img {
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+    size: cover;
+    margin: 10px;
+}
+
+img:hover {
+    transform: translateY(-8px);
+}
+
+nav {
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70px;
+    height: 97%;
+    background:var(--navbar);
+    margin: 0 auto;
+}
+
+.nav-container {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
 
 p {
     color: var(--text);
 
 }
-
-
