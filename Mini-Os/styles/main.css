@@ -1,0 +1,45 @@
+:root {
+    --navi: rgb(66, 120, 124);
+    --coso: grey;
+    --icon: rgb(86, 94, 170);
+    --text: white;
+}
+
+body {
+    display: grid;
+    background-image: url(/Mini-Os/images/system.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+
+.navbarContainer {
+    display: flex;
+    width: 400px;
+    height: 70vh;
+    background-color: var(--navi);
+    border-radius: 20px;
+    justify-content: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 6px 6px 6px rgb(red, green, blue);
+}
+
+p {
+    color: var(--text);
+
+}
+
+
