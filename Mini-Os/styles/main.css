@@ -1,0 +1,19 @@
+:root {
+    --navi: rgb(66, 120, 124);
+    --coso: grey;
+    --icon: white;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    background:
+    linear-gradient(rgba(228, 228, 228, 0.377), rgba(247, 247, 247, 0.452)), 
+    url() ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
