@@ -21,9 +21,9 @@ header {
 
 h1 {
     text-align: center;
-    top: 10px;
+    margin: 10px auto;
     color: var(--text);
-    font-size: 50px;
+    font-size: clamp(22px, 6vw, 50px);
     animation: beat 1.2s infinite;
     margin-left: 100px;
 }
@@ -37,7 +37,7 @@ h1 {
 img {
     width: 40px;
     transition: all 0.3s ease-in-out;
-    size: cover;
+    object-fit: cover;
     margin: 10px;
 }
 
