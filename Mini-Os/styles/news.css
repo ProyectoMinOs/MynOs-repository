@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    color: white;
+    background-color: black;
+
+}
+
+header{
+    background-image: url(/Mini-Os/images/news/imageti1.png);
+    width: auto;
+    height: 900px;
+    font-size: 100PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    height:50%;
+    object-fit: cover;
+}
+
+.art {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    font-size: 40px;
+    padding: 10%;   
+    gap:100px;
+}
+.art article{
+    border: 1px solid rgb(230, 223, 223);
+    border-radius: 40px;
+    width: 40%;
+    width: 100%;
+    font-size: 100px;
+    filter: brightness(50%);
+    transition: all 0.3s ease;
+
+    
+}
+p{
+    padding: 5rem;
+}
+
+article:hover{
+    filter:brightness(100%);
+    transform: translateY(-20px);
+    
+}
+
+@media  (min-width:600px){
+   header{
+        height: 50vh;
+        font-size: 20px;
+    }
+
+
+    .art article{
+        font-size: 2vw;
+    }
+    img{
+    width: 100%;
+    height:50%;
+    object-fit: cover;
+    
+    }
+
+    p{
+        padding: 2rem;
+    }
+    .art {
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    font-size: 4px;
+    padding: 20%;   
+    gap:100px;
+    }
+
+    .art article{
+    border: 2px solid rgb(230, 223, 223);
+    border-radius: 20px;
+    width: 40%;
+    width: 100%;
+    font-size: 15px;
+    overflow:hidden;
+    filter: brightness(50%);
+    transition: all 0.3s ease; 
+    }
+    article:hover{
+    filter:brightness(100%);
+    transform: translateY(-20px);
+
+}
+
+
+
+    
