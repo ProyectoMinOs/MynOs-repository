@@ -68,15 +68,18 @@ nav {
 }
 
 .nav2-container2 {
-    width: 50%;
+    width: 25%;
     height: 80%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     gap: 5px;
     border-radius: 20px;
-    margin-left: 100px;
     margin-bottom: 10px;
+    margin-right: 20px;
+
+}
+
+h2 {
+    margin: 0 auto;
 }
 
 footer {
@@ -94,6 +97,8 @@ footer {
 
 p {
     color: var(--text);
+    text-align: center;
+    
 }
 
 .window {
@@ -126,3 +131,5 @@ p {
     height: 100%;
     border: none;
 }
+
+
