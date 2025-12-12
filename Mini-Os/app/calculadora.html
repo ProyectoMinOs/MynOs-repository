@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Calculadora</title>
+     <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+  <main class="calc" role="application" aria-label="Calculadora">
+    <section class="screen" aria-hidden="false">
+      <div class="expression" id="expr">123 + 456</div>
+      <div class="result" id="res">579</div>
+    </section>
+
+    <section class="pad" aria-hidden="false">
+      <!-- fila 1 -->
+      <button class="key op" type="button">AC</button>
+      <button class="key op" type="button">±</button>
+      <button class="key op" type="button">%</button>
+      <button class="key op" type="button">÷</button>
+
+      <!-- fila 2 -->
+      <button class="key" type="button">7</button>
+      <button class="key" type="button">8</button>
+      <button class="key" type="button">9</button>
+      <button class="key op" type="button">×</button>
+
+      <!-- fila 3 -->
+      <button class="key" type="button">4</button>
+      <button class="key" type="button">5</button>
+      <button class="key" type="button">6</button>
+      <button class="key op" type="button">−</button>
+
+      <!-- fila 4 -->
+      <button class="key" type="button">1</button>
+      <button class="key" type="button">2</button>
+      <button class="key" type="button">3</button>
+      <button class="key op" type="button">+</button>
+
+      <!-- fila 5 -->
+      <button class="key wide" type="button">0</button>
+      <button class="key" type="button">.</button>
+      <button class="key op" type="button">=</button>
+    </section>
+  </main>
+</body>
+</html>
