@@ -1,6 +1,7 @@
 # 🌐 Proyect MinOs
 
 The purpose of this proyect is to incorporate a new operative system called MinOs, simple, intuitive and practical.
+Incorporate new functions d
 
 ## 🔗 Demo
 https://github.com/ProyectoMinOs/MynOs-repository
