@@ -1,0 +1,56 @@
+.calendar { 
+  max-width:600px; margin:24px auto; font-family:system-ui,Arial;
+ } /*el calendario no sera mas ancho de 640px,centrado horizontalmente con espacio arriba y abajo,tipografia del calendario*/
+
+ .month { 
+  border-radius: 15px;
+  text-align:center; margin-bottom:5px; font-weight:700; font-size:1.2rem;background-color: rgb(119, 126, 189);
+}/*Centrado,Negrita,Un poco más grande*/
+
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-radius: 15px;
+}
+
+.weekdays div { 
+  text-align:center; padding:8px 4px; font-weight:700; background:#f3f4f6; 
+}
+
+.days div { 
+  padding:12px 8px; min-height:60px; border:1px solid #eee; text-align:left;
+  border-radius: 15px;
+}
+
+.days div.empty { 
+  background: #fafafa; color:transparent;
+ } /* celdas vacías */
+
+ .days div .num { 
+  font-weight:600; float:right; opacity:0.9; 
+}
+
+.days div.evento { 
+  background:rgb(147, 226, 231); 
+  border-radius: 15px;
+} /* ejemplo de día con evento */
+
+@media (max-width:480px){
+   .days div{ min-height:48px; padding:8px; } 
+}
+
+.margen {
+  height: 650px;
+  width: 650px;
+  margin:auto;
+  padding-bottom:40px;
+  padding-top: 10px;
+  background-color: rgba(92, 73, 197, 0.178);
+}
+
+.table1{
+  background-color: rgb(255, 5, 5);
+}
+
+
+

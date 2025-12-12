@@ -1,0 +1,439 @@
+<!doctype html> <!--le dice al navegador que el documento es html5 -->
+<html lang="en"> <!--dice que el idioma esta en ingles-->
+<head>
+<meta charset="utf-8"/><!--Permite usar acentos y caracteres especiales.-->
+<meta name="viewport"  content="width=device-width,initial-scale=1"/> <!--hace que la pagina sea responsive para celulares.-->
+<link rel="stylesheet" href="/Mini-Os/styles/calendar.css">
+<title>calendar</title>
+
+</head>
+<body>
+  <div class="margen" class="table1">
+    <div class="calendar">
+      <div class="month">December 2025</div>
+
+      <div class="weekdays">
+        <div>Monday</div><div>Tuesday</div><div>Wednesday</div><div>Thursday</div><div>friday</div><div>Saturday</div><div>Sunday</div>
+      </div>
+
+      <div class="days">
+        <!-- Si el 1º empieza en jueves, agrega 3 .empty (Lun, Mar, Mié) -->
+        <!-- Luego las celdas con números -->
+        <div><span class="num">1</span></div>
+        <div><span class="num">2</span></div>
+        <div><span class="num">3</span></div>
+        <div><span class="num">5</span></div>
+        <div><span class="num">6</span></div>
+        <div class="evento"><span class="num">7</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="evento"><span class="num">8</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">9</span></div>
+        <div><span class="num">10</span></div>
+        <div><span class="num">11</span></div>
+        <div><span class="num">12</span></div>
+        <div><span class="num">13</span></div>
+        <div><span class="num">14</span></div>
+        <div><span class="num">15</span></div>
+        <div><span class="num">16</span></div>
+        <div><span class="num">17</span></div>
+        <div><span class="num">18</span></div>
+        <div><span class="num">19</span></div>
+        <div><span class="num">20</span></div>
+        <div><span class="num">21</span></div>
+        <div><span class="num">22</span></div>
+        <div><span class="num">23</span></div>
+        <div class="evento"><span class="num">24</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="evento"><span class="num">25</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">26</span></div>
+        <div><span class="num">27</span></div>
+        <div><span class="num">28</span></div>
+        <div><span class="num">29</span></div>
+        <div><span class="num">30</span></div>
+        <div class="evento"><span class="num">31</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <!-- ... hasta completar el mes (28,29,30 o 31) -->
+        <!-- Rellena al final con .empty si quieres que sean siempre 6 filas -->
+      </div>
+    </div>
+  </div>
+  <div class="margen" class="table2">
+    <div class="calendar">
+      <div class="month">January 2026</div>
+
+      <div class="weekdays">
+        <div>Monday</div><div>Tuesday</div><div>Wednesday</div><div>Thursday</div><div>friday</div><div>Saturday</div><div>Sunday</div>
+      </div>
+
+      <div class="days">
+        <!-- Si el 1º empieza en jueves, agrega 3 .empty (Lun, Mar, Mié) -->
+        <div class="empty"></div>
+        <div class="empty"></div>
+
+        <!-- Luego las celdas con números -->
+        <div class="evento"><span class="num">1</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">2</span></div>
+        <div><span class="num">3</span></div>
+        <div><span class="num">5</span></div>
+        <div class="evento"><span class="num">6</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">7</span></div>
+        <div><span class="num">8</span></div>
+        <div><span class="num">9</span></div>
+        <div><span class="num">10</span></div>
+        <div><span class="num">11</span></div>
+        <div class="evento"><span class="num">12</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">13</span></div>
+        <div><span class="num">14</span></div>
+        <div><span class="num">15</span></div>
+        <div><span class="num">16</span></div>
+        <div><span class="num">17</span></div>
+        <div><span class="num">18</span></div>
+        <div><span class="num">19</span></div>
+        <div><span class="num">20</span></div>
+        <div><span class="num">21</span></div>
+        <div><span class="num">22</span></div>
+        <div><span class="num">23</span></div>
+        <div><span class="num">24</span></div>
+        <div><span class="num">25</span></div>
+        <div><span class="num">26</span></div>
+        <div><span class="num">27</span></div>
+        <div><span class="num">28</span></div>
+        <div><span class="num">29</span></div>
+        <div class="evento"><span class="num">30</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <!-- ... hasta completar el mes (28,29,30 o 31) -->
+        <!-- Rellena al final con .empty si quieres que sean siempre 6 filas -->
+      </div>
+    </div>
+  </div>
+  <div class="margen" class="table3">
+    <div class="calendar">
+      <div class="month">February 2026</div>
+
+      <div class="weekdays">
+        <div>Monday</div><div>Tuesday</div><div>Wednesday</div><div>Thursday</div><div>friday</div><div>Saturday</div><div>Sunday</div>
+      </div>
+
+      <div class="days">
+        <!-- Si el 1º empieza en jueves, agrega 3 .empty (Lun, Mar, Mié) -->
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+
+        <!-- Luego las celdas con números -->
+        <div><span class="num">1</span></div>
+        <div><span class="num">2</span></div>
+        <div><span class="num">3</span></div>
+        <div><span class="num">5</span></div>
+        <div><span class="num">6</span></div>
+        <div><span class="num">7</span></div>
+        <div><span class="num">8</span></div>
+        <div><span class="num">9</span></div>
+        <div><span class="num">10</span></div>
+        <div><span class="num">11</span></div>
+        <div><span class="num">12</span></div>
+        <div><span class="num">13</span></div>
+        <div><span class="num">14</span></div>
+        <div><span class="num">15</span></div>
+        <div><span class="num">16</span></div>
+        <div><span class="num">17</span></div>
+        <div><span class="num">18</span></div>
+        <div><span class="num">19</span></div>
+        <div><span class="num">20</span></div>
+        <div><span class="num">21</span></div>
+        <div><span class="num">22</span></div>
+        <div><span class="num">23</span></div>
+        <div><span class="num">24</span></div>
+        <div><span class="num">25</span></div>
+        <div><span class="num">26</span></div>
+        <div><span class="num">27</span></div>
+        <div><span class="num">28</span></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <!-- ... hasta completar el mes (28,29,30 o 31) -->
+        <!-- Rellena al final con .empty si quieres que sean siempre 6 filas -->
+      </div>
+    </div>
+  </div>
+  <div class="margen" class="table4">
+    <div class="calendar">
+      <div class="month">March 2026</div>
+
+      <div class="weekdays">
+        <div>Monday</div><div>Tuesday</div><div>Wednesday</div><div>Thursday</div><div>friday</div><div>Saturday</div><div>Sunday</div>
+      </div>
+
+      <div class="days">
+        <!-- Si el 1º empieza en jueves, agrega 3 .empty (Lun, Mar, Mié) -->
+        <div class="empty"></div>
+        <div class="empty"></div>
+
+        <!-- Luego las celdas con números -->
+        <div><span class="num">1</span></div>
+        <div><span class="num">2</span></div>
+        <div><span class="num">3</span></div>
+        <div><span class="num">5</span></div>
+        <div><span class="num">6</span></div>
+        <div><span class="num">7</span></div>
+        <div class="evento"><span class="num">6</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">9</span></div>
+        <div><span class="num">10</span></div>
+        <div><span class="num">11</span></div>
+        <div><span class="num">12</span></div>
+        <div><span class="num">13</span></div>
+        <div><span class="num">14</span></div>
+        <div><span class="num">15</span></div>
+        <div><span class="num">16</span></div>
+        <div><span class="num">17</span></div>
+        <div><span class="num">18</span></div>
+        <div class="evento"><span class="num">6</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">20</span></div>
+        <div><span class="num">21</span></div>
+        <div><span class="num">22</span></div>
+        <div class="evento"><span class="num">6</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">24</span></div>
+        <div><span class="num">25</span></div>
+        <div><span class="num">26</span></div>
+        <div><span class="num">27</span></div>
+        <div><span class="num">28</span></div>
+        <div class="evento"><span class="num">29</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="evento"><span class="num">30</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">31</span></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <!-- ... hasta completar el mes (28,29,30 o 31) -->
+        <!-- Rellena al final con .empty si quieres que sean siempre 6 filas -->
+      </div>
+    </div>
+  </div>
+  <div class="margen" class="table5">
+    <div class="calendar">
+      <div class="month">April 2026</div>
+
+      <div class="weekdays">
+        <div>Monday</div><div>Tuesday</div><div>Wednesday</div><div>Thursday</div><div>friday</div><div>Saturday</div><div>Sunday</div>
+      </div>
+
+      <div class="days">
+        <!-- Si el 1º empieza en jueves, agrega 3 .empty (Lun, Mar, Mié) -->
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+
+        <!-- Luego las celdas con números -->
+        <div><span class="num">1</span></div>
+        <div class="evento"><span class="num">2</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="evento"><span class="num">3</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">4</span></div>
+        <div class="evento"><span class="num">5</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">6</span></div>
+        <div><span class="num">7</span></div>
+        <div><span class="num">8</span></div>
+        <div><span class="num">9</span></div>
+        <div><span class="num">10</span></div>
+        <div><span class="num">11</span></div>
+        <div><span class="num">12</span></div>
+        <div><span class="num">13</span></div>
+        <div><span class="num">14</span></div>
+        <div><span class="num">15</span></div>
+        <div><span class="num">16</span></div>
+        <div><span class="num">17</span></div>
+        <div><span class="num">18</span></div>
+        <div><span class="num">19</span></div>>
+        <div><span class="num">20</span></div>
+        <div><span class="num">21</span></div>
+        <div><span class="num">22</span></div>
+        <div class="evento"><span class="num">23</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">24</span></div>
+        <div class="evento"><span class="num">25</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="evento"><span class="num">26</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">27</span></div>
+        <div><span class="num">28</span></div>
+        <div class="evento"><span class="num">29</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="evento"><span class="num">30</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <!-- ... hasta completar el mes (28,29,30 o 31) -->
+        <!-- Rellena al final con .empty si quieres que sean siempre 6 filas -->
+      </div>
+    </div>
+  </div>
+  <div class="margen" class="table6">
+    <div class="calendar">
+      <div class="month">May 2026</div>
+
+      <div class="weekdays">
+        <div>Monday</div><div>Tuesday</div><div>Wednesday</div><div>Thursday</div><div>friday</div><div>Saturday</div><div>Sunday</div>
+      </div>
+
+      <div class="days">
+        <!-- Si el 1º empieza en jueves, agrega 3 .empty (Lun, Mar, Mié) -->
+        <!-- Luego las celdas con números -->
+        <div class="evento"><span class="num">1</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">2</span></div>
+        <div><span class="num">3</span></div>
+        <div><span class="num">4</span></div>
+        <div><span class="num">5</span></div>
+        <div><span class="num">6</span></div>
+        <div><span class="num">7</span></div>
+        <div><span class="num">8</span></div>
+        <div><span class="num">9</span></div>
+        <div class="evento"><span class="num">10</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">11</span></div>
+        <div><span class="num">12</span></div>
+        <div><span class="num">13</span></div>
+        <div><span class="num">14</span></div>
+        <div class="evento"><span class="num">15</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">16</span></div>
+        <div><span class="num">17</span></div>
+        <div class="evento"><span class="num">18</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">19</span></div>
+        <div><span class="num">20</span></div>
+        <div><span class="num">21</span></div>
+        <div><span class="num">22</span></div>
+        <div><span class="num">23</span></div>
+        <div><span class="num">24</span></div>
+        <div><span class="num">25</span></div>
+        <div><span class="num">26</span></div>
+        <div><span class="num">27</span></div>
+        <div><span class="num">28</span></div>
+        <div><span class="num">29</span></div>
+        <div class="evento"><span class="num">30</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">31</span></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <!-- ... hasta completar el mes (28,29,30 o 31) -->
+        <!-- Rellena al final con .empty si quieres que sean siempre 6 filas -->
+      </div>
+    </div>
+  </div>
+  <div class="margen" class="7"> 
+    <div class="calendar">
+      <div class="month">June 2026</div>
+
+      <div class="weekdays">
+        <div>Monday</div><div>Tuesday</div><div>Wednesday</div><div>Thursday</div><div>friday</div><div>Saturday</div><div>Sunday</div>
+      </div>
+
+      <div class="days">
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <!-- Si el 1º empieza en jueves, agrega 3 .empty (Lun, Mar, Mié) -->
+        <!-- Luego las celdas con números -->
+        <div class="evento"><span class="num">1</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">2</span></div>
+        <div><span class="num">3</span></div>
+        <div class="evento"><span class="num">4</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">5</span></div>
+        <div><span class="num">6</span></div>
+        <div><span class="num">7</span></div>
+        <div class="evento"><span class="num">8</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">9</span></div>
+        <div><span class="num">10</span></div>
+        <div><span class="num">11</span></div>
+        <div><span class="num">12</span></div>
+        <div><span class="num">13</span></div>
+        <div><span class="num">14</span></div>
+        <div class="evento"><span class="num">15</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">16</span></div>
+        <div><span class="num">17</span></div>
+        <div><span class="num">18</span></div>
+        <div><span class="num">19</span></div>
+        <div><span class="num">20</span></div>
+        <div class="evento"><span class="num">21</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div><span class="num">22</span></div>
+        <div><span class="num">23</span></div>
+        <div><span class="num">24</span></div>
+        <div><span class="num">25</span></div>
+        <div><span class="num">26</span></div>
+        <div><span class="num">27</span></div>
+        <div><span class="num">28</span></div>
+        <div><span class="num">29</span></div>
+        <div class="evento"><span class="num">30</span>
+          <div style="font-size:.75rem; margin-top:6px;">Festivo</div>
+        </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+
+        <!-- ... hasta completar el mes (28,29,30 o 31) -->
+        <!-- Rellena al final con .empty si quieres que sean siempre 6 filas -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
