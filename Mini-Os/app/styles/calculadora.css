@@ -1,0 +1,115 @@
+:root{
+    --bg:#0f1724;
+    --panel:#0b1220;
+    --accent:#06b6d4;
+    --btn:#111827;
+    --btn-secondary:#1f2937;
+    --text:#e6eef6;
+    --glass: rgba(255,255,255,0.04);
+    font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+    background: linear-gradient(180deg,#071020 0%, #081428 100%);
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    margin:0;
+    padding:20px;
+}
+
+.calc {
+    width:320px;
+    max-width:96vw;
+    border-radius:18px;
+    padding:18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.03));
+    box-shadow: 0 6px 30px rgba(2,6,23,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+    backdrop-filter: blur(6px);
+}
+
+.screen {
+    height:72px;
+    border-radius:12px;
+    background:var(--panel);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:12px;
+    margin-bottom:14px;
+    box-shadow: inset 0 -6px 20px rgba(0,0,0,0.5);
+}
+
+.expression {
+    font-size:14px;
+    color:rgba(255,255,255,0.6);
+    min-height:18px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.result {
+    font-size:28px;
+    font-weight:600;
+    text-align:right;
+    margin-top:4px;
+    letter-spacing:0.5px;
+}
+
+.pad {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+}
+
+button.key {
+    user-select:none;
+    border:0;
+    padding:16px;
+    border-radius:10px;
+    font-size:18px;
+    background:linear-gradient(180deg,var(--btn), var(--btn-secondary));
+    color:var(--text);
+    box-shadow: 0 4px 10px rgba(2,6,23,0.6);
+    transition: transform .08s ease, box-shadow .08s ease;
+    cursor: pointer;
+}
+
+button.key:active{
+    transform: translateY(2px) scale(.995);
+    box-shadow: 0 2px 6px rgba(2,6,23,0.7);
+}
+
+button.op {
+    background: linear-gradient(180deg,#0b1220, #052833);
+    color:var(--accent);
+    font-weight:600;
+}
+
+button.wide {
+    grid-column: span 2;
+}
+
+.note{
+    margin-top:12px;
+    font-size:12px;
+    color:rgba(255,255,255,0.45);
+    text-align:center;
+}
+
+/* pequeño efecto "presionado" visual con :focus-visible */
+button.key:focus-visible{
+    outline: 2px solid rgba(6,182,212,0.16);
+    outline-offset: 2px;
+}
+
+/* responsivo */
+@media (max-width:360px){
+.calc{padding:12px}
+.screen{height:64px}
+button.key{padding:12px;font-size:16px}
+}
