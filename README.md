@@ -17,9 +17,11 @@ https://github.com/ProyectoMinOs/MynOs-repository
 - CSS
 
 
-
-
 ## 👨‍💻 Authors
-- Tu nombre
+- Jose Daniel
+- Robinson
+- Isabella
+- Steven
+- Matias
 
 
